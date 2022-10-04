@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms 2-3</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <form action="/action_page.php">
+        <fieldset>
+            <legend>Regirster form:</legend>
+            <div>
+                <label for="fname">Name:</label>
+                <input class="widht1" type="text" id="fname" name="fname" placeholder="Name"><br><br>
+            </div>
+            <div>
+                <label for="lname">Surname:</label>
+                <input class="widht1" type="text" id="lname" name="lname" placeholder="Surname"><br><br>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input class="widht1" type="email" id="email" name="email" placeholder="Email"><br><br>
+            </div>
+            <div class="horizontal1">
+                <label for="gender">Gender</label>
+                <label><input type="radio" name="geschlecht" />Male</label>
+                <label><input type="radio" name="geschlecht" />Female</label>
+            </div>
+            <label>Picture<input type="file" /></label>
+            <label for="country">Country</label>
+            <select class="widht1" id="country">
+                <option value="germany">Germany</option>
+                <option value="spain">Spain</option>
+                <option value="france">France</option>
+            </select>
+            <section>
+                <div class="horizontal1">
+                    <p>Preferred languages</p>
+                    <div class=".horizontal1">
+                        <select class="widht2" multiple="multiple" id="">
+                            <option value="html">HTML</option>
+                            <option value="css">CSS</option>
+                            <option value="js">JS</option>
+                            <option value="react">React</option>
+                            <option value="kotlin">Kotlin</option>
+                        </select>
+                        <p>(To choose more than one use cmd key)</p>
+                    </div>
+                </div>
+                <article class="horizontal1">
+                    <p>Field of activity</p>
+                    <label>IT<input type="checkbox" /></label>
+                    <label>Design<input type="checkbox" /></label>
+                    <label>Other<input type="checkbox" /></label>
+                </article>
+                <article class="horizontal1">
+                    <input type="submit" value="Submit">
+                    <input type="cancel" value="Cancel">
+                </article>
+            </section>
+        </fieldset>
+
+    </form>
+</body>
+
+</html>
